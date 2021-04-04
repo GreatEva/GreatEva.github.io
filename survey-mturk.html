@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Road Trip Interview Appointment</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+        <script language='Javascript'>window.onload = function() {turkSetAssignmentID('mturk_form','submitButton')}</script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark  sticky-top">
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#step1">Step 1: Read Instruction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step2">Step 2: Register Interview Appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step3">Step 3: Attend your appointment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#step4">Step 4: Fill in your Survey Code</a>
+              </li>              
+            </ul>
+        </nav>
+
+        <div class="container p-3 t-3">
+            <span class="text-center"> <h1>Road Trip Interview Appointment</h1> </span>
+            
+            <div class="alert alert-success" id="step1"> Step 1: Read Instruction</div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        The purpose of this study is to develop an application program for road-trippers. We are looking for participants (older than 18 years old) who have a memorable road trip experience to join our one-on-one interview. We’d love to know what you think of road trips, your memorable road trip experience, what you did in the car to pass time on the road, what you would like to listen to on the road. Thank you for you consideration. 
+                        If you have questions, comments or concerns about this research project, please contact Eva Dan (email: simpleword858@gmail.com). 
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="container p-3">
+            <div class="alert alert-success" id="step2"> Step 2: Interview Appointment</div>
+            <div class="row"> 
+                <div class="col-sm-12">
+                    <p>
+                        To participate in the interview, please make an appointment. <a  target="_blank" href="https://doodle.com/meetme/qc/wJottKQECS">Click here to make appointment.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container p-3">
+            <div class="alert alert-success" id="step3"> Step 3: Attend your interview </div>
+                    <p> 
+                        Please attend the interview at the time of your appointment. The interview will be held in Zoom (<a  target="_blank" href="https://us05web.zoom.us/j/8745982670?pwd=T280M0pxejN6ZWxqUVRjNDJ5elU1dz09">Click here to join Zoom meeting</a>).
+                        During the inteview, conversations will be recorded. To protect your confidentiality, all identifiers (e.g., age, gender) will be removed from the data set to prevents your identity from being connected with your responses. At the end of the interview, the interviewer will tell you the code for rewards.
+                    </p>
+        </div>        
+        <div class="container p-3">
+            <div class="alert alert-success" id="step4"> Step 4: Fill in your Survey Code </div>
+            <form method='post' id='mturk_form' action='https://www.mturk.com/mturk/externalSubmit'>
+                <!-- https://workersandbox.mturk.com/mturk/externalSubmit'  https://www.mturk.com/mturk/externalSubmit !-->
+                    <p>Fill in the response code xxxxx to get rewards</p>
+                    <div class="form-group">
+                        <input type="text" id="code" name="Code" placeholder="Enter Code Here"/>
+                        <input type="submit" id="submitButton" class="btn btn-primary" value="Submit"/>
+                        <input type="hidden" id="assignmentId" name="assignmentId">
+                    </div>
+                </form>         
+                
+        </div>            
+
+    </body>
+    
+</html>
