@@ -35,7 +35,7 @@
                 assignmentID = turkGetParam(param_name, "");
                 document.getElementById(param_name).value = assignmentID;
 
-                if (assignmentID == null) { 
+                if (assignmentID == "") { 
                 // If we're previewing, disable the button and give it a helpful message
                 btn = document.getElementById(button_name);
                 if (btn) {
